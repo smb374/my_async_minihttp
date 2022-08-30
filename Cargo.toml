@@ -1,0 +1,20 @@
+[package]
+name = "my-async-minihttp"
+version = "0.1.0"
+edition = "2021"
+authors = ["Po-Yeh Chen <smb374.cs08@nctu.edu.tw>"]
+description = "A port of tokio-minihttp"
+readme = "README.md"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+my-async = { git = "https://github.com/smb374/my-async-rs", branch = "main" }
+bytes = "~1.2"
+httparse = "~1.7"
+log = "~0.4"
+chrono = "~0.4"
+thiserror = "~1.0"
+futures-lite = "~1.12"
+async-trait = "~0.1"
